@@ -1,0 +1,80 @@
+.close-acc {
+  width: 20rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .content {
+    background-color: white;
+    width: 25rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    .radio {
+      width: auto;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .content > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .content > label {
+    color: #777676;
+    font-size: 0.9rem;
+  }
+
+  .content > input ,.content>textarea{
+    width: 95%;
+    outline: none;
+    border: 1px solid #e4e4e4;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    resize: none;
+  }
+
+  .content > span {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .content > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content > div:last-child > span {
+    margin: 0;
+    background-color: #e4e4e4;
+    color: #adadad;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .content > div:last-child > span.active {
+    color: white;
+    background-color: #4643EE;
+  }
+
+  .content > div:last-child > div > label {
+    color: #777676;
+    font-size: 0.9rem;
+  }
+
+}

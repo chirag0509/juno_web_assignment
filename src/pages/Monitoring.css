@@ -1,0 +1,150 @@
+.monitoring {
+  padding: 2rem;
+
+  .label {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .status {
+    border-bottom: 1.5px solid #e4e4e4;
+    padding: 1.5rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .status > div > span {
+    padding: 1.4rem;
+    color: #adadad;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .status > div > span.active {
+    color: #4643ee;
+    border-bottom: 2px solid #4643ee;
+  }
+
+  .status > span {
+    display: flex;
+    align-items: center;
+    color: #d13b1b;
+    background-color: #f6d8d8;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+}
+
+.pending {
+  .actions {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+
+  .actions > div {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      transform: translateX(-1800%);
+      color: #adadad;
+      font-size: 1.2rem;
+    }
+  }
+
+  .actions > div > input {
+    outline: none;
+    padding: 0.8rem 0 0.8rem 2.4rem;
+    width: 20rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ebebeb;
+    color: #adadad;
+    font-size: 1rem;
+  }
+
+  .actions > div > input:focus {
+    border-color: #4643ee;
+    color: black;
+  }
+
+  .actions > div > input::placeholder {
+    color: #adadad;
+  }
+
+  .actions > span {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #777676;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin: 0 0.4rem;
+    cursor: pointer;
+  }
+
+  .container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    width: 12rem;
+    position: absolute;
+    transform: translate(160%,-10%);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .container>div{
+    padding: 0.5rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    color: #777676;
+    border-radius: 0.3rem;
+  }
+
+  .container>div:hover{
+    background-color: #EAEAFE;
+    color: black;
+    font-weight: 500;
+  }
+}
+
+.pending > div {
+  max-height: 28rem;
+  overflow-y: auto;
+}
+
+.pending > div > table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid #e4e4e4;
+
+  .heading {
+    background-color: #f5f5f5;
+    font-weight: 500;
+  }
+}
+
+.pending > div > table > tr > td {
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.pending > div > table > tr {
+  border-bottom: 1.5px solid #e4e4e4;
+}
+
+.pending > div > table > tr > td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pending > div > table > tr > td:nth-child(1) > .icon {
+  color: #4643ee;
+}

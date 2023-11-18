@@ -1,0 +1,52 @@
+.sidebar {
+  width: 16rem;
+  border-right: 1.5px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 100%;
+
+  .upper-container {
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 500;
+      border-top: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+      margin: 3rem 0 2.5rem 0;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      color: #ccc;
+    }
+  }
+
+  .upper-container > div {
+    color: #777676;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    margin: 0.6rem 0;
+    cursor: pointer;
+  }
+  
+  .upper-container > div.active {
+    color: #504def;
+    background-color: #ededfe;
+    border-radius: 0.4rem;
+  }
+
+  .lower-container{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .lower-container > img {
+    width: 2.5rem;
+    padding: 0.5rem;
+  }
+
+  .lower-container>div>div:nth-child(1){
+    font-weight: 600;
+  }
+}
